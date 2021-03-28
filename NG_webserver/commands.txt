@@ -1,0 +1,868 @@
+    1  curl http://localhost
+    2  curl http://localhost/param.html
+    3  uname -a
+    4  su -
+    5  sudo docker ps
+    6  sudo yum install docker
+    7  sudo yum install docker docker-compose
+    8  sudo chkconfig docker on 
+    9  sudo docker.service  start
+   10  sudo service docker  start
+   11  sudo docker ps -a
+   12  sudo curl -L "https://github.com/docker/compose/releases/download/1.26.0/docker-compose-$(uname -s)-$(uname -m)"  -o /usr/local/bin/docker-compose
+   13  sudo mv /usr/local/bin/docker-compose /usr/bin/docker-compose
+   14  sudo chmod +x /usr/bin/docker-compose
+   15  ls
+   16  mkdir NG_webserver
+   17  mv docker-compose.yml NG_webserver/
+   18  mv src/ NG_webserver/
+   19  ls
+   20  mv Dockerfile NG_webserver/
+   21  ls
+   22  cd NG_webserver/
+   23  ls
+   24  vi docker-compose.yml 
+   25  docker-compose up --build -d
+   26  sudo docker-compose up --build -d
+   27  docker ps -a
+   28  sudo docker ps -a
+   29  hostname
+   30  sudo telnet 3.127.80.168 3306
+   31  sudo yum install telnet
+   32  telnet 3.127.80.168 3306
+   33  telnet 3.120.227.74 3306
+   34  docker ps -a
+   35  sudo docker ps -a
+   36  sudo docker inspect ng_webserver_php_1
+   37  mkdir  NG_DB
+   38  cd NG_DB
+   39  ifconfig -a
+   40  pwd
+   41  vi docker-compose.yml
+   42  vi Dockerfile
+   43  vi Task.sql
+   44  history |grep build
+   45  sudo docker build -t mysql .
+   46  vi Dockerfile 
+   47  sudo docker build -t mysql .
+   48  sudo docker images
+   49  vi ../NG_webserver/docker-compose.yml 
+   50  ls
+   51  vi docker-compose.yml 
+   52  cd ../NG_webserver/
+   53  vi docker-compose.yml 
+   54  sudo docker stack ls
+   55  sudo docker stack rm ngapp
+   56  history |grep stack
+   57  exit
+   58  docker ps -a
+   59  sudo docker ps -a
+   60  ls
+   61  cd NG_webserver/src/
+   62  cd ..
+   63  vi docker-compose.yml 
+   64  sudo docker inspect ng_webserver_php_1 |grep -i ipadd
+   65  telnet 172.17.0.2 3306
+   66  sudo cp -rp /etc/hosts /etc/hosts_original
+   67  sudo vi /etc/hosts
+   68  telnet 172.17.0.2 3306
+   69  ping 172.17.0.2
+   70  sudo cp -rp /etc/hosts_original /etc/hosts
+   71  sudo docker swarm init
+   72  sudo docker node ls
+   73  docker info
+   74  sudo docker info
+   75  ifconfig -a
+   76  sudo docker node ls
+   77  docker netwrok ls
+   78  docker service ls
+   79  sudo docker service ls
+   80  sudo docker ps -a
+   81  sudo docker rm -f ng_webserver_php_1
+   82  docker network ls
+   83  sudo docker network ls
+   84  docker network rm ng_webserver_default
+   85  sudo docker network rm ng_webserver_default
+   86  sudo docker network ls
+   87  sudo docker network rm docker_gwbridge
+   88  uname -a
+   89  pwd
+   90  ls
+   91  mv *.php src/
+   92  ls
+   93  mv *.html src/
+   94  ls
+   95  ls -ltr 
+   96  mv Dockerfile Dockerfile_24-3-2021 
+   97  mv docker-compose.yml docker-composeyml_24-3-2021 
+   98  mkdir bkp
+   99  mv docker-composeyml_24-3-2021 bkp/
+  100  mv Dockerfile_24-3-2021 bkp/
+  101  ls
+  102  vi Dockerfile 
+  103  vi docker-compose.yml 
+  104  ifconfig -a
+  105  vi docker-compose.yml 
+  106  sudo docker stack deploy ngapp -c docker-compose.yml
+  107  vi docker-compose.yml 
+  108  sudo docker stack deploy ngapp -c docker-compose.yml
+  109  docker stack ls
+  110  sudo docker stack ls
+  111  docker stack services ngapp
+  112  sudo docker stack services ngapp
+  113  docker ps -a
+  114  sudo docker ps -a
+  115  sudo docker stack ps
+  116  sudo docker stack ps ngapp
+  117  sudo docker node ls
+  118  docker swarm logs ah6p39yhjaw4ohbvha6g2hpwf
+  119  vi docker-compose.yml 
+  120  sudo docker stack deploy ngapp -c docker-compose.yml
+  121  vi docker-compose.yml 
+  122  sudo docker-compose up --build -d
+  123  vi docker-compose.yml 
+  124  sudo docker-compose up --build -d
+  125  sudo docker network ls
+  126  vi docker-compose.yml 
+  127  sudo docker-compose up --build -d
+  128  vi docker-compose.yml 
+  129  sudo docker-compose up --build -d
+  130  vi docker-compose.yml 
+  131  sudo docker-compose up --build -d
+  132  docker network ls
+  133  sudo docker network ls
+  134  vi docker-compose.yml 
+  135  sudo docker-compose up --build -d
+  136  vi docker-compose.yml 
+  137  sudo docker-compose up --build -d
+  138  vi docker-compose.yml 
+  139  sudo docker-compose up --build -d
+  140  sudo docker ps
+  141  vi docker-compose.yml 
+  142  sudo docker-compose up --build -d
+  143  vi docker-compose.yml 
+  144  sudo docker-compose up --build -d
+  145  vi docker-compose.yml 
+  146  history 
+  147  docker stack ls
+  148  sudo docker stack ls
+  149  sudo docker stack deploy ngapp -c docker-compose.yml
+  150  vi docker-compose.yml 
+  151  sudo docker stack deploy ngapp -c docker-compose.yml
+  152  vi docker-compose.yml 
+  153  sudo docker stack deploy ngapp -c docker-compose.yml
+  154  vi docker-compose.yml 
+  155  sudo docker stack deploy ngapp -c docker-compose.yml
+  156  vi Dockerfile 
+  157  vi docker-compose.yml 
+  158  sudo docker stack deploy ngapp -c docker-compose.yml
+  159  vi docker-compose.yml 
+  160  vi Dockerfile 
+  161  vi docker-compose.yml 
+  162  sudo docker stack deploy ngapp -c docker-compose.yml
+  163  sudo docker ps -a
+  164  sudo docker service
+  165  sudo docker service ls
+  166  sudo docker service logs
+  167  sudo docker service logs ngapp_php
+  168  ls
+  169  vi Dockerfile 
+  170  sudo docker ps -a
+  171  sudo docker rm ng_webserver_php
+  172  sudo docker rm ng_webserver_php_1
+  173  sudo docker ps -a
+  174  vi docker-compose.yml 
+  175  vi Dockerfile 
+  176  vi docker-compose.yml 
+  177  sudo docker ps -a
+  178  sudo docker rm ngapp_php.1.k51rmuxmec8lk0dwx999mntwy
+  179  sudo docker rm -f ngapp_php.1.k51rmuxmec8lk0dwx999mntwy
+  180  sudo docker-compose up --build -d
+  181  sudo docker ps -a
+  182  sudo docker rm -f ngapp_php.1.mqc1cibbn67oauruzgsbbi5r7 ng_webserver_php_1
+  183  sudo docker ps -a
+  184  sudo docker ps -a
+  185  sudo docker rm -f ngapp_php.1.snn3x9y8igqt15yz08uvzo8j1
+  186  sudo docker ps -a
+  187  sudo docker stack ls
+  188  sudo docker stack rm ngapp
+  189  sudo docker stack ls
+  190  sudo docker ps -a
+  191  sudo docker stack deploy ngapp -c docker-compose.yml
+  192  sudo docker network ls
+  193  vi docker-compose.yml 
+  194  history |grep network
+  195  vi docker-compose.yml 
+  196  sudo docker stack deploy ngapp -c docker-compose.yml
+  197  sudo docker node ls
+  198  history |grep -i overl
+  199  vi docker-compose.yml 
+  200  sudo docker stack deploy ngapp -c docker-compose.yml
+  201  vi docker-compose.yml 
+  202  sudo docker stack deploy ngapp -c docker-compose.yml
+  203  vi docker-compose.yml 
+  204  sudo docker stack deploy ngapp -c docker-compose.yml
+  205  vi docker-compose.yml 
+  206  sudo docker stack deploy ngapp -c docker-compose.yml
+  207  sudo docker stack ls
+  208  sudo docker service lls
+  209  sudo docker service ls
+  210  sudo docker ps  -a
+  211  vi docker-compose.yml 
+  212  sudo docker stack ls
+  213  sudo docker stack rm -f ngapp
+  214  sudo docker stack rm  ngapp
+  215  sudo docker stack ls
+  216  sudo docker ps  -a
+  217  sudo docker stack deploy ngapp -c docker-compose.yml
+  218  vi docker-compose.yml 
+  219  sudo docker stack deploy ngapp -c docker-compose.yml
+  220  sudo docker images
+  221  sudo docker rmi d1a7002222c5 d1a7002222c5 f013cea8224b 3730d2532c1d
+  222  sudo docker images
+  223  vi Dockerfile 
+  224  sudo docker build -t php .
+  225  sudo docker images
+  226  vi docker-compose.yml 
+  227  sudo docker stack deploy ngapp -c docker-compose.yml
+  228  vi docker-compose.yml 
+  229  sudo docker stack deploy ngapp -c docker-compose.yml
+  230  vi docker-compose.yml 
+  231  sudo docker stack deploy ngapp -c docker-compose.yml
+  232  vi docker-compose.yml 
+  233  sudo docker stack deploy ngapp -c docker-compose.yml
+  234  sudo docker stack deploy ngapp -c docker-compose.yml
+  235  sudo docker service ls
+  236  sudo docker ps  -a
+  237  sudo docker stack rm ngapp_php
+  238  sudo docker stack ls
+  239  sudo docker stack rm ngapp
+  240  vi docker-compose.yml 
+  241  sudo docker service ls
+  242  sudo docker stack deploy ngapp -c docker-compose.yml
+  243  vi docker-compose.yml 
+  244  sudo docker stack deploy ngapp -c docker-compose.yml
+  245  vi docker-compose.yml 
+  246  sudo docker stack deploy ngapp -c docker-compose.yml
+  247  sudo docker service ls
+  248  sudo docker ps  -a
+  249  sudo docker service logs ngapp_php
+  250  vi docker-compose.yml 
+  251  sudo docker stack services ngapp_php
+  252  sudo docker stack services ngapp
+  253  vi docker-compose.yml 
+  254  ls src/
+  255  ls
+  256  sudo docker service logs ngapp
+  257  sudo docker service logs ngapp_php
+  258  docker service ps --no-trunc ngapp_php
+  259  sudo docker service ps --no-trunc ngapp_php
+  260  sudo docker stack rm ngapp
+  261  sudo docker images
+  262  vi docker-compose.yml 
+  263  sudo docker stack deploy ngapp -c docker-compose.yml
+  264  sudo docker service ps --no-trunc ngapp_php
+  265  sudo docker ps -a
+  266  history |grep stack
+  267  sudo docker stack rm -f ngapp
+  268  sudo docker stack rmf ngapp
+  269  sudo docker stack rm ngapp
+  270  vi docker-compose.yml 
+  271  sudo docker images
+  272  vi docker-compose.yml 
+  273  sudo docker service ls
+  274  sudo docker stack deploy ngapp -c docker-compose.yml
+  275  sudo docker service ls
+  276  sudo docker service ps --no-trunc ngapp_php
+  277  sudo docker ps -a
+  278  sudo docker logs 6f0df8911f29
+  279  sudo docker logs 4f128e41c71e
+  280  sudo docker rm 4f128e41c71e a3a081e080e7
+  281  sudo docker ps -a
+  282  sudo docker logs 79320bb9d92a
+  283  sudo docker service ps --no-trunc ngapp_php
+  284  vi docker-compose.yml 
+  285  sudo docker inspect network
+  286  sudo docker inspect 
+  287  docker-compose up -d
+  288  sudo docker-compose up -d
+  289  sudo docker service ps --no-trunc ngapp_php
+  290  sudo docker ps -a
+  291  sudo docker rm ngapp_php.1.1e8lpdz137gjzjpa8ys4ue3es ngapp_php.1.4n0mqb2ea0lrom3yyyol5f1nk ngapp_php.1.aqp7wtc9hb9fsl3w2rcqywitq
+  292  sudo docker ps -a
+  293  vi docker-compose.yml 
+  294  sudo docker ps -a
+  295  sudo docker inspect ng_webserver_php_1|egrep -i 'ipadd|netwo'
+  296  sudo docker network ls
+  297  vi docker-compose.yml 
+  298  sudo docker service ps 
+  299  sudo docker service 
+  300  sudo docker service ls
+  301  sudo docker service ps ngapp_php
+  302  sudo docker service ps ngapp
+  303  cd ..
+  304  bash 
+  305  history |grep stack
+  306  cd NG_webserver/
+  307  ls -tr 
+  308  ls -ltr 
+  309  sudo docker stack deploy ngapp -c docker-compose.yml
+  310  vi docker-compose.yml 
+  311  sudo docker network ls
+  312  sudo docker network rm ng_webserver_ng_my_network
+  313  sudo docker service ls
+  314  sudo docker stack 
+  315  sudo docker stack ls
+  316  sudo docker network rm ng_webserver_ng_my_network
+  317  vi docker-compose.yml 
+  318  sudo docker stack deploy ngapp -c docker-compose.yml
+  319  vi docker-compose.yml 
+  320  sudo docker stack deploy ngapp -c docker-compose.yml
+  321  vi docker-compose.yml 
+  322  sudo yum update
+  323  history 
+  324  sudo docker ps -a
+  325  ls
+  326  cd NG_webserver/
+  327  ls
+  328  vi docker-compose.yml 
+  329  cd NG_webserver/
+  330  vi docker-compose.yml 
+  331  sudo docker stack rm
+  332  sudo docker stack rm ngapp
+  333  sudo docker service ls
+  334  sudo docker stack ls
+  335  sudo docker ps -l
+  336  history 
+  337  sudo docker ps -l
+  338  docker rm -f ng_webserver_php_1
+  339  sudo docker rm -f ng_webserver_php_1
+  340  sudo docker stack deploy ngapp -c docker-compose.yml
+  341  vi docker-compose.yml 
+  342  sudo docker stack deploy ngapp -c docker-compose.yml
+  343  vi docker-compose.yml 
+  344  ls
+  345  vi bkp/docker-composeyml_24-3-2021 
+  346  sudo docker stack deploy ngapp -c docker-compose.yml
+  347  sudo docker ps -l
+  348  sudo docker stack ls
+  349  sudo docker service ls
+  350  sudo docker ps -l
+  351  sudo docker logs ngapp_php.1.mnpvl54lcm38korsaqz6el4m6
+  352  sudo docker start ngapp_php.1.mnpvl54lcm38korsaqz6el4m6
+  353  sudo docker logs ngapp_php.1.mnpvl54lcm38korsaqz6el4m6
+  354  sudo docker service ps ngapp --no-trunc
+  355  sudo docker service ls11
+  356  sudo docker service ps ngapp_php --no-trunc
+  357  sudo service docker restart
+  358  sudo docker service ps ngapp_php --no-trunc
+  359  sudo docker ps -l
+  360  sudo docker ps -a
+  361  sudo docker start ngapp_php.1.0xcfhgr3ltzkwdcm7095ifbx0
+  362  sudo docker ps -a
+  363  sudo docker logs ngapp_php.1.0xcfhgr3ltzkwdcm7095ifbx0
+  364  vi docker-compose.yml 
+  365  sudo docker stack ls
+  366  sudo docker stack rm ngapp
+  367  sudo docker ps -a
+  368  sudo docker rm ngapp_php.1.pow9h0k3n41h4ywz23hxkh4ew
+  369  sudo docker ps -a
+  370  sudo docker service ls
+  371  sudo docker stack deploy ngapp -c docker-compose.yml
+  372  sudo docker service ls
+  373  sudo docker ps -a
+  374  sudo docker stack ls
+  375  docker service ps --no-trunc ngapp_php
+  376  sudo docker service ps --no-trunc ngapp_php
+  377  sudo service docker restart
+  378  sudo docker service ps --no-trunc ngapp_php
+  379  vi docker-compose.yml 
+  380  ls /home/ec2-user/NG_webserver/src
+  381  vi docker-compose.yml 
+  382  sudo docker stack rm ngapp
+  383  sudo docker ps -a
+  384  sudo docker service ls
+  385  sudo docker stack deploy ngapp -c docker-compose.yml
+  386  sudo docker service ls
+  387  sudo docker ps -a
+  388  sudo docker logs ngapp_php.1.v8kv5oy513gfncven1zvgk9e0
+  389  cd NG_webserver/
+  390  ls
+  391  vi docker-compose.yml 
+  392  sudo docker images
+  393  vi docker-compose.yml 
+  394  sudo docker service ls
+  395  sudo docker ps -a
+  396  sudo reboot 
+  397  sudo docker service status
+  398  sudo  service docker status
+  399  sudo docker ps -a
+  400  sudo docker stack rm ngapp
+  401  sudo docker ps -a
+  402  cd NG_webserver/
+  403  sudo docker stack deploy ngapp -c docker-compose.yml
+  404  sudo docker ps -a
+  405  vi docker-compose.yml 
+  406  vi Dockerfile 
+  407  sudo docker stack rm ngapp
+  408  sudo docker images 
+  409  sudo docker rm 0263fdb29d29
+  410  sudo docker rm 8067cc8bfb30
+  411  sudo docker rm d1a7002222c5.
+  412  sudo docker rm d1a7002222c5
+  413  sudo docker rmi 8067cc8bfb30 d1a7002222c5 3730d2532c1d  82dee7792cc0
+  414  sudo docker images 
+  415  sudo docker rmi d1a7002222c5
+  416  sudo docker ps -a
+  417  docker build -t php .
+  418  sudo docker build -t php .
+  419  sudo docker images 
+  420  vi docker-compose.yml 
+  421  vi Dockerfile 
+  422  sudo docker stack deploy ngapp -c docker-compose.yml
+  423  sudo docker ps -a
+  424  sudo docker service ls
+  425  sudo docker stack ls
+  426  sudo docker ps -l
+  427  docker service ps --no-trunc ngapp_php
+  428  sudo docker service ps --no-trunc ngapp_php
+  429  sudo docker ps -l
+  430  sudo docker start ngapp_php.1.nshrz2ohzkwot2toxliuv6boh
+  431  sudo docker ps -l
+  432  sudo docker ps -a
+  433  sudo docker logs ngapp_php.1.xyk25yyzljjqiohyc5qybh0gr
+  434  docker service ps --no-trunc ngapp_php
+  435  sudo docker service ps --no-trunc ngapp_php
+  436  sudo docker stack services 
+  437  sudo docker stack services ngapp_php
+  438  sudo docker swarm init
+  439  docker swarm leave
+  440  sudo docker swarm leave
+  441  sudo docker swarm init
+  442  sudo docker ps -a
+  443  sudo docker stack ls
+  444  sudo docker stack deploy ngapp -c docker-compose.yml
+  445  sudo docker ps -a
+  446  sudo docker service ls
+  447  vi bkp/docker-composeyml_24-3-2021 
+  448  sudo docker ps -a
+  449  sudo docker stack ls
+  450  sudo docker service ps --no-trunc ngapp_php
+  451  sudo docker node ls
+  452  sudo docker-compose up -d
+  453  sudo docker node ls
+  454  sudo docker service ls
+  455  sudo docker stack ls
+  456  sudo docker ps -a
+  457  sudo docker stack rm ngapp
+  458  sudo docker ps -a
+  459  sudo docker network ls
+  460  vi docker-compose.yml 
+  461  sudo docker rm -f ng_webserver_php_1
+  462  vi docker-compose.yml 
+  463  sudo docker-compose up -d
+  464  sudo docker stack rm ngapp
+  465  sudo docker stack ls
+  466  sudo docker service ls
+  467  sudo docker images 
+  468  cd NG_webserver/
+  469  ls
+  470  vi bkp/docker-composeyml_24-3-2021 
+  471  vi docker-compose.yml 
+  472  vi bkp/docker-composeyml_24-3-2021 
+  473  mv docker-compose.yml docker-composeyml _bkp
+  474  mv docker-compose.yml docker-composeyml_bkp
+  475  cp -rp bkp/docker-composeyml_24-3-2021 docker-compose.yml
+  476  vi docker-compose.yml 
+  477  vi Dockerfile 
+  478  sudo docker-compose up --build -d
+  479  sudo docker ps -a
+  480  sudo docker network ls
+  481  sudo docker inspect ng_webserver_php_1|egrep -i 'ipadd|netwo'
+  482  vi src/param.php 
+  483  docker node ls
+  484  sudo docker node ls
+  485  sudo docker network create --driver overlay  --subnet 10.0.0.0/20 --attachable   ng-swarm
+  486  sudo docker network ls
+  487  sudo docker network rm ng-swarm
+  488  sudo docker network create -driver overlay   ng-swarm
+  489  sudo docker network create --driver overlay   --attachable   ng-swarm
+  490  sudo docker network ls
+  491  sudo docker ps -a
+  492  sudo docker inspect ng_webserver_php_1|egrep -i 'ipadd|netwo'
+  493  vi docker-compose.yml 
+  494  sudo docker network ls
+  495  vi docker-compose.yml 
+  496  sudo docker rm -f ng_webserver_php_1
+  497  sudo docker-compose up --build -d
+  498  vi docker-compose.yml 
+  499  sudo docker-compose up --build -d
+  500  vi docker-compose.yml 
+  501  sudo docker-compose up --build -d
+  502  vi docker-compose.yml 
+  503  sudo docker-compose up --build -d
+  504  vi docker-compose.yml 
+  505  sudo docker-compose up --build -d
+  506  vi docker-compose.yml 
+  507  sudo docker-compose up --build -d
+  508  vi docker-compose.yml 
+  509  sudo docker-compose up --build -d
+  510  sudo docker inspect ng_webserver_php_1|egrep -i 'ipadd|netwo'
+  511  cd NG_webserver/
+  512  ls
+  513  docker node ls
+  514  sudodocker node ls
+  515  sudo docker node ls
+  516  sudo docker node rm us7hs3qbaalrnk0vu4q2v075w xgg1pbfmob13lya7nkerjio01
+  517  sudo docker node ls
+  518  sudo docker swarm init
+  519  docker swarm leave
+  520  sudo docker swarm leave
+  521  sudo docker node ls
+  522  uptime 
+  523  telnet 3.120.227.74 2377
+  524  sudo docker node ls
+  525  sudo docker service
+  526  sudo docker service ls
+  527  sudo docker ps -a
+  528  vi docker-compose.yml 
+  529  sudo docker rm -f ng_webserver_php_1
+  530  sudo docker stack ls
+  531  sudo docker stack deploy ngapp -c docker-compose.yml
+  532  vi docker-compose.yml 
+  533  docker-compose -version
+  534  vi docker-compose.yml 
+  535  sudo docker stack deploy ngapp -c docker-compose.yml
+  536  vi docker-compose.yml 
+  537  ls
+  538  vi docker-compose.yml 
+  539  mv docker-compose.yml docker-composeyml_separate
+  540  vi docker-composeyml_bkp 
+  541  mv docker-composeyml_bkp docker-compose.yml
+  542  vi docker-compose.yml 
+  543  sudo docker network ls
+  544  sudo docker network rm ng-swarm ng_webserver_default
+  545  sudo docker network ls
+  546  vi docker-compose.yml 
+  547  history |grep stack
+  548  sudo docker stack deploy ngapp -c docker-compose.yml
+  549  vi docker-compose.yml 
+  550  sudo docker stack deploy ngapp -c docker-compose.yml
+  551  vi docker-compose.yml 
+  552  sudo docker stack deploy ngapp -c docker-compose.yml
+  553  vi docker-compose.yml 
+  554  sudo docker stack deploy ngapp -c docker-compose.yml
+  555  vi docker-compose.yml 
+  556  sudo docker stack rm ngapp
+  557  sudo docker stack ls
+  558  sudo docker ps -a
+  559  sudo docker swarm
+  560  sudo docker swarm leave
+  561  sudo docker swarm leave --force
+  562  sudo docker swarm init --advertise-addr 192.168.56.101
+  563  sudo docker node ls
+  564  ifconfig 
+  565  sudo docker network ls
+  566  sudo docker inspect ingress
+  567  sudo docker swarm leave --force
+  568  sudo docker swarm init --advertise-addr 10.0.0.50
+  569  sudo docker swarm leave --force
+  570  ifconfig -a
+  571  sudo docker swarm init --advertise-addr 3.127.80.168
+  572  sudo docker node ls
+  573  sudo docker network ls
+  574  sudo docker network create -d overlay ng-swarm
+  575  sudo docker network ls
+  576  ls
+  577  vi docker-compose.yml 
+  578  sudo docker-compose up -d
+  579  sudo docker network ps 
+  580  sudo docker network ls
+  581  vi docker-compose.yml 
+  582  ls
+  583  sudo docker network ls
+  584  sudo docker ps -a
+  585  sudo docker service ls
+  586  sudo docker stack ls
+  587  sudo docker node ls
+  588  sudo docker images
+  589  sudo docker ps -a
+  590  cd NG_webserver/
+  591  ls
+  592  vi docker-compose.yml 
+  593  sudo docker network ls
+  594  vi docker-compose.yml 
+  595  sudo docker-compose up -d
+  596  vi docker-compose.yml 
+  597  sudo docker network ls
+  598  sudo docker network rm ng-swarm
+  599  vi docker-compose.yml 
+  600  sudo docker-compose up -d
+  601  vi docker-compose.yml 
+  602  sudo docker-compose up -d
+  603  vi docker-compose.yml 
+  604  sudo docker-compose up -d
+  605  vi docker-compose.yml 
+  606  sudo service tasks
+  607  sudo docker service tasks
+  608  sudo docker service tasks ls
+  609  sudo docker node ls
+  610  sudo docker swarm leave 
+  611  sudo docker swarm leave --force
+  612  sudo docker swarm init
+  613  sudo docker node ls
+  614  sudo docker network ls
+  615  sudo docker ps -a
+  616  vi docker-compose.yml 
+  617  sudo docker stack deploy ngapp -c docker-compose.yml
+  618  vi docker-compose.yml 
+  619  sudo docker stack deploy ngapp -c docker-compose.yml
+  620  vi docker-compose.yml 
+  621  sudo docker stack deploy ngapp -c docker-compose.yml
+  622  vi docker-compose.yml 
+  623  sudo docker stack deploy ngapp -c docker-compose.yml
+  624  sudo docker service tasks ls
+  625  sudo docker service ls
+  626  sudo docker stack ls
+  627  sudo docker ps -a
+  628  docker stack ps ex1
+  629  sudo docker stack ps ex1
+  630  sudo docker stack ls
+  631  sudo docker stack ps ngapp
+  632  sudo docker service ls
+  633  sudo docker stack ps ngapp
+  634  sudo docker service ps --no-trunc ngapp_php
+  635  sudo docker ps -a
+  636  sudo docker logs ngapp_php.1.ot0jdea5g0qeu0hm5er3ik0ho
+  637  sudo docker ps -a
+  638  sudo docker logs ngapp_php.1.uxcv0e8s9p5mz8k7022caolrc
+  639  sudo docker stack rm ngapp
+  640  sudo docker network ls
+  641  sudo docker-compose up -d
+  642  sudo docker ps -a
+  643  sudo docker network ls
+  644  sudo docker node ls
+  645  sudo docker node rm rfmpvse7qqlv04r4mnfyubuxu
+  646  sudo docker node ls
+  647  sudo docker network ls
+  648  ls
+  649  lsls
+  650  ls 
+  651  cd NG_webserver/
+  652  ls
+  653  vi Dockerfile 
+  654  q!
+  655  sudo docker pull php:8-apache
+  656  sudo docker pull zookeeper
+  657  docker run -p 2181:2181 -d --name zookeeper --network
+  658  sudo docker network ls
+  659  docker run -p 2181:2181 -d --name zookeeper --network ng-swarm zookeeper:latest
+  660  sudo docker run -p 2181:2181 -d --name zookeeper --network ng-swarm zookeeper:latest
+  661  sudo docker run --rm --network ng-swarm ches/kafka:latest \kafka-topics.sh --create --topic USER_CREATED_TOPIC --replication-factor 1 --partitions 1 --zookeeper zookeeper:2181
+  662  sudo docker ps -a
+  663  sudo docker rm -f zookeeper
+  664  sudo docker network ls
+  665  ls
+  666  vi docker-compose.yml_wokring_with_docker_compose 
+  667  vi docker-compose.yml
+  668  sudo docker stack deploy ngapp -c docker-compose.yml
+  669  vi docker-compose.yml
+  670  sudo docker inspect ngapp
+  671  sudo docker ps -a
+  672  sudo docker service ls
+  673  vi docker-compose.yml
+  674  sudo docker network ls
+  675  sudo docker network rm ngapp_ng-swarm
+  676  vi docker-compose.yml
+  677  sudo docker stack deploy -c docker-compose.yml
+  678  vi docker-compose.yml
+  679  sudo docker-compose up --build -d
+  680  sudo docker network ls
+  681  sudo docker node ls
+  682  vi docker-compose.yml
+  683  sudo docker-compose up --build -d
+  684  vi docker-compose.yml
+  685  sudo docker-compose up --build -d
+  686  sudo docker network ls
+  687  vi docker-compose.yml
+  688  sudo docker-compose up --build -d
+  689  vi docker-compose.yml
+  690  sudo docker-compose up --build -d
+  691  vi docker-compose.yml
+  692  sudo docker-compose up --build -d
+  693  vi docker-compose.yml
+  694  sudo docker-compose up --build -d
+  695  vi docker-compose.yml
+  696  sudo docker-compose up --build -d
+  697  sudo docker-compose down 
+  698  sudo docker stack deploy 
+  699  sudo docker stack deploy bahana
+  700  sudo docker stack deploy bahana -c docker-compose.yml
+  701* 
+  702  vi Dockerfile 
+  703  sudo docker ps -a
+  704  vi Dockerfile 
+  705  sudo docker stack rm bahana
+  706  sudo docker-compose up -d
+  707  vi Dockerfile 
+  708  sudo docker rm -f ng_webserver_php_1
+  709  sudo docker network ls
+  710  sudo network rm ng_webserver_ng-swarm
+  711  sudo docker network rm ng_webserver_ng-swarm
+  712  sudo docker network ls
+  713  vi Dockerfile 
+  714  sudo docker-compose --build up -d
+  715  sudo docker-compose up --build -d
+  716  sudo docker ps -a
+  717  sudo docker run -it ng_webserver_php_1 exec
+  718  history |grep exec
+  719  sudo docker run -it ng_webserver_php_1 exec
+  720  sudo docker ps -a
+  721  docker exec -it ng_webserver_php_1 bash 
+  722  docker exec -it ng_webserver_php_1 /bin/bash
+  723  docker exec -it ng_webserver_php_1 
+  724  docker exec -it ng_webserver_php_1 ls
+  725  sudo docker rm -f ng_webserver_php_1
+  726  sudo docker ps -a
+  727  sudo docker-compose up --build -d
+  728  sudo docker ps -a
+  729  sudo docker inspect ng_webserver_php_1|grep -i ipadd
+  730  sudo docker inspect ng_webserver_php_1|grep -i netwo
+  731  vi docker-compose.yml
+  732  sudo docker network ls
+  733  sudo docker rm -f ng_webserver_php_1
+  734  sudo docker network ls
+  735  docker network rm  ng-swarm ng_webserver_ng-swarm
+  736  sudo docker network rm  ng-swarm ng_webserver_ng-swarm
+  737  sudo docker network ls
+  738  sudo docker-compose up --build -d
+  739  vi docker-compose.yml
+  740* 
+  741  sudo docker network ls
+  742  sudo docker rm -f ng_webserver_php_1
+  743  sudo docker network ls
+  744  sudo docker network rm ng_webserver_ng-swarm
+  745  sudo docker network ls
+  746* 
+  747  sudo docker ps -a
+  748  vi docker-compose.yml
+  749  docker network create -driver overlay --attachable  ngswarm
+  750  sudo docker network create -driver overlay --attachable  ngswarm
+  751  sudo docker network create --driver overlay --attachable  ngswarm
+  752  sudo docker network ls
+  753* sudo docker swarm 
+  754  vi docker-compose.yml
+  755  sudo docker-compose up -d
+  756  sudo docker-compose up 
+  757  vi docker-compose.yml
+  758  sudo docker-compose up 
+  759  vi docker-compose.yml
+  760  sudo docker-compose up -d
+  761  sudo docker network ls
+  762  sudo docker-compose down
+  763  sudo docker stack deploy ngapp -c docker-compose.yml
+  764  sudo docker ps -a
+  765  sudo docker stack ls
+  766  sudo docker service ps --no-trunc ngapp_php
+  767  sudo docker ps -a
+  768  sudo docker logs ngapp_php.1.u207a8u65gjfta1pz5q4ay67l
+  769  sudo docker ps -a
+  770  sudo docker stack rm ngapp
+  771  sudo docker images 
+  772  docker run php:latest -d
+  773  sudo docker run php:latest -d
+  774  sudo docker run -d php:latest 
+  775  sudo docker ps -a
+  776  sudo docker logs charming_dijkstra
+  777  docker exec -it ng_webserver_php_1
+  778  vi Dockerfile 
+  779  sudo docker rm -f ng_webserver_php_1
+  780  sudo docker rm -f charming_dijkstra
+  781  sudo docker rm -f vigorous_lederberg
+  782  sudo docker images
+  783  sudo docker rmi  82dee7792cc0 3730d2532c1d 7bd5221100c4 59dc536427c2
+  784  sudo docker images
+  785  ls
+  786  docker build -t php:background .
+  787  sudo docker build -t php:background .
+  788  sudo docker images
+  789  vi Dockerfile 
+  790  vi docker-compose.yml
+  791  sudo docker images
+  792  vi docker-compose.yml
+  793  sudo docker stack deploy ngapp -c docker-compose.yml
+  794  sudo docker ps -a
+  795  sudo docker stack ls
+  796  sudo docker service ls
+  797  sudo docker ps -a
+  798* 
+  799  vi Dockerfile 
+  800  vi docker-compose.yml
+  801  sudo docker node ls
+  802  cd ..
+  803  ls
+  804  ls NG_DB/
+  805  cd NG_DB/
+  806  vi Dockerfile 
+  807  vi docker-compose.yml 
+  808  sudo docker stack deploy ngdb -c docker-compose.yml
+  809  vi docker-compose.yml 
+  810  sudo docker images
+  811  vi docker-compose.yml 
+  812  vimdiff docker-compose.yml ../NG_webserver/docker-compose.yml
+  813  vi docker-compose.yml 
+  814  sudo docker stack deploy ngdb -c docker-compose.yml
+  815  sudo docker images
+  816  sudo docker service ls
+  817  sudo docker ps -a
+  818  vi Task.sql 
+  819  vi Dockerfile 
+  820  vi docker-compose.yml 
+  821  sudo docker images 
+  822  docker build -t db:custom .
+  823  sudo docker build -t db:custom .
+  824  vi docker-compose.yml 
+  825  sudo docker stack ls
+  826  sudo docker stack rm ngdb
+  827  sudo docker stack deploy ngdb -c docker-compose.yml
+  828  sudo docker ps -a
+  829  vi Dockerfile 
+  830  vi docker-compose.yml 
+  831  vi ../NG_webserver/docker-compose.yml
+  832  sudo docker stack ls
+  833  sudo docker stack rm ngdb ngapp
+  834  vi ../NG_webserver/docker-compose.yml
+  835  vi docker-compose.yml 
+  836  grep -inr tbl *
+  837  grep -inr tbl ../*
+  838  vi ../NG_webserver/src/param.php
+  839  vi ../NG_webserver/docker-compose.yml
+  840  vi docker-compose.yml 
+  841  vi ../NG_webserver/src/param.php
+  842  vi Task.sql 
+  843  sudo docker stack deploy ngdb -c docker-compose.yml
+  844  sudo docker stack rm ngdb ngapp
+  845  vi docker-compose.yml 
+  846  sudo docker stack deploy ngdb -c docker-compose.yml
+  847  vi docker-compose.yml 
+  848  vi ../NG_webserver/src/param.php
+  849  vi ../NG_webserver/docker-compose.yml
+  850  vi ../NG_webserver/src/param.php
+  851  vi ../NG_webserver/docker-compose.yml
+  852  vi docker-compose.yml 
+  853  sudo docker images
+  854  docker rmi 43cce2dc276d
+  855  sudo docker rmi 43cce2dc276d
+  856  sudo docker build -t db:custom .
+  857  sudo docker stack deploy ngdb -c docker-compose.yml
+  858  sudo docker ps -a
+  859  cd ..
+  860  cd NG_webserver/
+  861  ls
+  862  sudo docker stack deploy ngapp -c docker-compose.yml
+  863  sudo docker ps -a
+  864  sudo docker stack ls
+  865  sudo docker ps -a
+  866  docker exec -it ngdb_mysql.1.kc6ecvpdxypsrb5vryk8s49dy  bash
+  867  sudo docker exec -it ngdb_mysql.1.kc6ecvpdxypsrb5vryk8s49dy  bash
+  868  history >commands.txt
